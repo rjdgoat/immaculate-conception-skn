@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Immaculate Conception Catholic School | St. Kitts</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div>
+                <p class="eyebrow">Official Immaculate Conception Catholic School</p>
+                <h1>Official Website of Immaculate Conception Catholic School, St. Kitts</h1>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#admissions">Admissions</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section-card">
+            <h2>About Our School</h2>
+            <p>Immaculate Conception Catholic School is a welcoming educational community in St. Kitts. We combine academic excellence with Catholic values to support students from early years through middle school. Our school encourages respect, service, and leadership as part of everyday learning.</p>
+        </section>
+
+        <section id="programs" class="section-card">
+            <h2>Academic Programs</h2>
+            <p>Our curriculum is designed to challenge students while nurturing their spiritual, social, and intellectual growth. We offer literacy, math, science, religious education, arts, and physical education with a focus on creativity, critical thinking, and compassion.</p>
+        </section>
+
+        <section id="admissions" class="section-card">
+            <h2>Admissions</h2>
+            <p>Families are invited to learn about enrollment, school tours, and parish support. We welcome students of all backgrounds who seek a strong academic foundation grounded in Catholic faith and community values.</p>
+            <button id="learnMoreBtn" type="button">Learn More</button>
+        </section>
+
+        <section id="more-info" class="section-card hidden">
+            <h2>More About Our School</h2>
+            <p>Immaculate Conception Catholic School is committed to helping every student succeed academically and grow spiritually. Our school community is built on faith, respect, and service, with strong support from families and parish leaders.</p>
+            <img src="download.jpg" alt="Immaculate Conception Catholic School campus">
+            <p class="image-note">This now uses your local school photo file named <strong>download.jpg</strong>.</p>
+            <p>Students enjoy classrooms designed for hands-on learning, bright outdoor spaces, and a warm environment where teachers know every child by name. We offer after-school activities, community events, and faith-based celebrations throughout the year.</p>
+            <p>The school emphasizes character development, teamwork, and leadership so students are prepared for the future while remaining grounded in Christian values.</p>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2>Contact Us</h2>
+            <p>Visit us in Basseterre, St. Kitts, or get in touch for more information about our programs and school life. We are proud to serve families across the island.</p>
+            <p>Email: info@immaculateconceptionkn.com</p>
+            <p>Phone: +1 (869) 465-1234</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Immaculate Conception Catholic School • St. Kitts</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function () {
+            const moreInfo = document.getElementById('more-info');
+            moreInfo.classList.toggle('hidden');
+            if (!moreInfo.classList.contains('hidden')) {
+                moreInfo.scrollIntoView({ behavior: 'smooth' });
+                this.textContent = 'Hide Details';
+            } else {
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>
